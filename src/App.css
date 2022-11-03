@@ -1,38 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  padding-top: 10px;
+  /* background-image: linear-gradient(to right top, #11111d, #0e0e23, #0a0b2a, #050630, #000236); */
+  background-image: linear-gradient(to left top, #f89ee1, #de8de0, #bf7ee1, #9872e1, #6469e1);
+  font-family: 'Poor Story', sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rebeldevelop_logo_container {
+  width: 100%;
+  height: 50px;
+  margin: 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.rebeldevelop_logo {
+  height: 320px;
+  padding-top: 20px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator_container {
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  background-color: rgb(205, 210, 253);
+  border-radius: 20px;
+  border: 2px solid #000130;
+}
+
+.fila {
+  margin: 4px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  position: absolute;
+  width: 1000px;
+  height: 200px;
+  background: rgba(46, 155, 215, 0.19);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.6px);
+  -webkit-backdrop-filter: blur(0.6px);
+  border: 1 solid rgba(128, 211, 255, 0.13);
+  z-index: 100;
+  transform: rotate(0.51545turn);
 }

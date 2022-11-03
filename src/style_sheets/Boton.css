@@ -1,0 +1,41 @@
+.button-container {
+    height: 83px;
+    display: flex;
+    flex: 1 1; /* ayuda a distribuir el espacio o longitud el elemento en base a otros componente que tenga cerca en el contenedor */
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-container:hover {
+    background-color: rgb(42, 150, 221);
+    color: rgb(0, 6, 97);
+}
+
+.button-container:active {
+    background: linear-gradient(to bottom, rgb(42, 150, 221), rgb(0, 6, 97));
+    color: #fff;
+}
+
+.operador {
+    background-color: rgb(163, 130, 255);
+}
+
+.operador:hover {
+    background-color: rgb(0, 6, 97);
+    color: #fff;
+}
+
+.operador:active {
+    background: linear-gradient(to bottom, rgb(163, 130, 255), #6469e1);
+    color: #000;
+}
+
